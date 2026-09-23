@@ -1,0 +1,34 @@
+class Post:
+    def __init__(self, contenido, fecha, likes):
+        self.contenido = contenido
+        self.fecha = fecha
+        self.likes = likes
+
+    def mostrar_post(self):
+        print(f"Post: {self.contenido}, Fecha: {self.fecha}, Likes: {self.likes}")
+
+
+class Comentario:
+    def __init__(self, autor, texto, receiver):
+        self.autor = autor
+        self.texto = texto
+        self.receiver = receiver
+
+    def mostrar_comentario(self):
+        print(f"Autor: {self.autor}, Comentario: {self.texto}, Fecha: {self.fecha}")
+
+
+class Mensaje:
+    def __init__(self, remitente, destinatario, contenido):
+        self.remitente = remitente
+        self.destinatario = destinatario
+        self.contenido = contenido
+
+    def enviar_mensaje(self):
+        print(f"{self.remitente} le envio un mensaje a {self.destinatario}: {self.contenido}")
+
+
+user1=Usuario("Adrian", "adrian@utd.edu.mx", "19", "pass123")
+user2=Usuario("Dulce", "dulce@utd.edu.mx", "20", "pass123")
+
+post1=user1.create_post("Hi everyone!", "Im an IT engineer")
