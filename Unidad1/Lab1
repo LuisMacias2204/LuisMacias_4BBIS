@@ -1,0 +1,25 @@
+class Laptop:
+  def __init__(self, color, material, size):
+    self.color = color
+    self.material = material
+    self.size = size
+
+  def move(self):
+    print("The Laptop is Turn off or Turn on")
+
+  def describe(self):
+    print(f"This laptop is made with {self.material}",
+          f"The color is {self.color} y size:{self.size}")
+#Self: Se utiliza para decirle a Python a que objeto pertenecen los atributos.
+#Create an instance using the class "Laptop"
+table1 = Laptop("Grey", "Plastic", "3m3")
+table2 = Laptop("Yellow", "Steal", "1x5m")
+
+#We access to the objetc(Instance) "table1" to call its data
+print(table1.material)
+print(table2.color)
+table1.move()
+table2.describe()
+
+#Instance "table 2"
+print(table2.material)
